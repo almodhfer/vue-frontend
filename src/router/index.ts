@@ -1,6 +1,9 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
+import Table from "../views/Table.vue";
+import TableCrud from "../views/TableCrud.vue";
+import Plot from "../views/Plot.vue";
 
 Vue.use(VueRouter);
 
@@ -9,6 +12,22 @@ const routes: Array<RouteConfig> = [
     path: "/",
     name: "Home",
     component: Home
+  },
+  {
+    path: "/table",
+    name: "table",
+    component: Table
+  },
+  {
+    path: "/table-crud",
+    name: "table-crud",
+    component: TableCrud
+  },
+  {
+    path: "/plot",
+    name: "plot",
+    component: Plot
+
   },
   {
     path: "/about",
